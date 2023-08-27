@@ -1,0 +1,8 @@
+Data Object, get ami value using AWS Systems Manager Parameter store
+ 
+referance ---> https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-public-parameters-ami.html
+
+windows AWS cli command to get AMI PUBLIC PARAMETER, NAME,TYPE,VALUE,VERSION,ARN,LASTMODIFIEDDATE
+aws ssm get-parameters-by-path ^
+    --path "/aws/service/ami-amazon-linux-latest" ^
+    --region us-east-1
